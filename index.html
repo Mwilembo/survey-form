@@ -4,20 +4,57 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
   <body>
     <nav>
       <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
     </nav>
     <main>
-      <h1>Home page</h1>
+      <h1>Movie Survey Form</h1>
+      <div class="form-group">
+        <form action="#">
+          <label for="fullName"> Enter you full name: </label>
+          <input type="text" name="fullName" /><br /><br />
+          <label for="department">Enter your department:</label>
+          <input type="text" name="department" /><br /><br />
+          <label for="message">Tell us a little about yourself?</label
+          ><br /><br />
+          <textarea
+            name="message"
+            id="messageText"
+            cols="30"
+            rows="10"
+            placeholder="Enter between 100 to 150 words."
+          ></textarea
+          ><br />
+          <br />
+          <label for="exercise">Do you exercise at home?</label><br />
+          <input type="radio" name="exercise" value="yes" />Yes
+          <input type="radio" name="exercise" value="no" /> No <br /><br />
+          <label for="reading"
+            >How do you like reading about your favorite topics?</label
+          ><br />
+          <input type="radio" name="reading" value="Books" />Books <br />
+          <input type="radio" name="reading" value="Magazines" />Magazines
+          <br />
+          <input type="radio" name="reading" value="PhoneApps" />Phone Apps
+          <br />
+          <input type="radio" name="reading" value="OnlineResources" />Online
+          Resources <br />
+          <br />
+          <label for="movies"> What type of movies do you like? </label><br />
+
+          <select name="movies" id="movieList">
+            <option value="comedy">Comedy</option>
+            <option value="action">Action</option>
+            <option value="drama">Drama</option>
+            <option value="other">Other</option></select
+          ><br /><br />
+          <input type="submit" value="Submit Form" />
+        </form>
+      </div>
     </main>
   </body>
 </html>
